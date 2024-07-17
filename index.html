@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <title>MAINSTREAM</title>
+
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/fullcalendar/main.css" />
+
+    <script src="./assets/js/jquery-1.12.4.min.js?ver=220620"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js?ver=220620"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <meta
+      name="viewport"
+      id="meta_viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10"
+    />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#click_image").on("click", function () {
+          $("#intro").css("display", "none");
+
+          setTimeout(() => {
+            location.href = "home.html";
+          }, 2000);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <section id="intro">
+      <div class="section-in">
+        <a class="img">
+          <img
+            src="./assets/images/bubble.gif"
+            width="100%"
+            alt="비눗방울 안 영지"
+          />
+          <img
+            id="click_image"
+            src="./assets/images/b-hover.png"
+            width="100%"
+            alt="비눗방울 안 영지"
+            class="hover"
+          />
+        </a>
+      </div>
+      <div class="bubble01">
+        <img src="./assets/images/b-left.png" width="100%" alt="비눗방울" />
+      </div>
+      <div class="bubble02">
+        <img src="./assets/images/b-right.png" width="100%" alt="비눗방울" />
+      </div>
+    </section>
+
+    <section id="loading">
+      <div class="section-in">
+        <div class="img">
+          <img
+            src="./assets/images/fall.gif"
+            width="100%"
+            alt="떨어지는 영지"
+          />
+        </div>
+        <div class="cloud">
+          <img src="./assets/images/cloud.png" width="100%" alt="구름" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

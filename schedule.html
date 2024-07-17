@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <title>MAINSTREAM</title>
+
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/fullcalendar/main.css" />
+
+    <script src="./assets/js/jquery-1.12.4.min.js?ver=220620"></script>
+    <script src="./assets/js/jquery-migrate-1.4.1.min.js?ver=220620"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <meta
+      name="viewport"
+      id="meta_viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10"
+    />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          headerToolbar: {
+            left: "prevYear,prev,next,nextYear today",
+            center: "title",
+            right: "dayGridMonth,dayGridWeek,dayGridDay",
+          },
+          events: [],
+        });
+
+        calendar.render();
+      });
+    </script>
+  </head>
+
+  <body>
+    <section id="schedule">
+      <div class="section-in">
+        <h1 class="title">Artist Schedule</h1>
+        <div class="schedule-wrap">
+          <div class="calendar-wrap"><div id="calendar"></div></div>
+          <div class="img">
+            <img
+              src="./assets/images/s-img.png"
+              width="100%"
+              alt="지휘봉 들고 있는 영지"
+            />
+          </div>
+          <div class="img mobile">
+            <img
+              src="./assets/images/s-img-m.png"
+              width="100%"
+              alt="지휘봉 들고 있는 영지"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
